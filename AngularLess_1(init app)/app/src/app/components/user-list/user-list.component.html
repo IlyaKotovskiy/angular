@@ -1,0 +1,19 @@
+<div class="user_class">
+  <h2>User List</h2>
+  <!-- Задание 1 -->
+  <!-- На стороне разметки реализайте цикл, который создать маркированный спсик
+  с именами всех пользователей.
+  Если польтзователь несовершенолетный - покрасьте имя в красный цвет (текст)
+  В противном случае - в коричневый (brown) -->
+  <ul>
+    @for (user of users; track user.id) {
+    <li [style.color]="user.age >= 18 ? 'brown' : 'red'">{{ user.name }}</li>
+    }
+  </ul>
+  <p>isShow = {{ isShow }}</p>
+  <p>name = {{ name }}</p>
+
+  <!-- Картинки -->
+  <img width="300" height="300" src="/assets/1.jpg">
+  <img width="300" height="300" [src]="srcImage">
+</div>
