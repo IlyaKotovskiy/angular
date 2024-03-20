@@ -1,0 +1,12 @@
+<div class="statistics">
+  <div class="container">
+    <div class="wrapper">
+      @for(elem of statistics; track elem.id) {
+        <div class="elem">
+          <span>{{ elem.title }}</span>
+          <p>{{ elem.descr }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</div>

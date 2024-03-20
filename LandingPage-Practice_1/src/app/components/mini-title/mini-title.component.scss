@@ -1,0 +1,16 @@
+span {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 16px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 5px;
+    background-color: var(--red-color);
+  }
+}

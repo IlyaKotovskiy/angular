@@ -1,0 +1,18 @@
+<header>
+  <div class="container">
+     <div class="wrapper">
+      <a class="logo">
+        <img src="/assets/icons/logo.svg" alt="logo">
+      </a>
+      <ul class="nav-wrap">
+        @for(elem of nav; track elem.id) {
+          <li class="nav-item">
+            <a href="#">
+              {{ elem.title }}
+            </a>
+          </li>
+        }
+      </ul>
+     </div>
+  </div>
+</header>

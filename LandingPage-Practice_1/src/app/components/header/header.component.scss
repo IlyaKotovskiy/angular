@@ -1,0 +1,18 @@
+header {
+  padding: 40px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrap {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-item {
+  font-size: 20px;
+}
