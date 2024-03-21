@@ -1,0 +1,33 @@
+.item {
+  background-color: #fff;
+  padding: 32px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.post {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-weight: 800;
+  }
+}
+
+.descr {
+  line-height: 140%;
+}
