@@ -1,0 +1,30 @@
+<div>
+  <h1>Event example</h1>
+  <button (click)="handleClick()">Click!</button>
+
+  <h1>Conter</h1>
+  <p>{{ count }}</p>
+  <button (click)="increment()">Increment!</button>
+
+  <h1>Key Event</h1>
+  <input (keydown)="keyHandle($event)" />
+
+  <h1>Form</h1>
+  <form (submit)="handleClick(); $event.preventDefault()">
+    <input />
+    <input type="submit" />
+  </form>
+
+  <!-- Задача: циклично отрусуйте каждый эленмнт массива в маркированном списке
+  Дату необходимо преобразовать по формату: '20.04:2020'
+
+  Над списокм реализуйте кнопку, которая по нажатию будет формировать новый элемент
+  массива с текущем моментом времени -->
+  <h1>Task 1</h1>
+  <button (click)="createCurrentDate()">Add Current Date</button>
+  <ul>
+    @for(elem of dates; track $index) {
+      <li>{{ elem | date: 'dd.MM:yyyy' }}</li>
+    }
+  </ul>
+</div>

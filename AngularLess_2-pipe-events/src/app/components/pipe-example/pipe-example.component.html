@@ -1,0 +1,25 @@
+<div>
+  <div class="string_pipe">
+    <h1>{{ title }}</h1>
+    <!-- Pipe - преобразование данных в html шаблоне -->
+    <p>{{ title | lowercase }}</p>
+    <p>{{ title | uppercase }}</p>
+  </div>
+  <div class="date_pipe">
+    <h1>{{ currentDate }}</h1>
+    <p>{{ currentDate | date }}</p>
+    <p>{{ currentDate | date: 'dd.MM' }}</p>
+    <p>{{ currentDate | date: 'fullDate' }}</p>
+    <p>{{ currentDate | date: 'fullDate' | uppercase }}</p>
+  </div>
+  <div class="number_pipe">
+    <h1>{{ price }}</h1>
+    <p>{{ price | currency: 'RUB' }}</p>
+    <p>{{ price | percent: '1.2-5' }}</p>
+    <p>{{ price | number }}</p>
+  </div>
+  <div class="custom_pipe">
+    <h1>{{ testValue }}</h1>
+    <p>{{ testValue | initcap }}</p>
+  </div>
+</div>
