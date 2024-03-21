@@ -1,0 +1,7 @@
+<div
+  class="todo_card"
+  [style.backgroundColor]="completed ? 'green' : 'red'"
+  (dblclick)="TodoService.deleteTodo(id)"
+>
+  <h2>{{ title }}</h2>
+</div>
