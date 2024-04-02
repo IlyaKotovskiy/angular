@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  justify-content: center;
+
+  div {
+    border: 1px solid;
+    padding: 25px;
+
+    border-radius: 15px;
+  }
+}

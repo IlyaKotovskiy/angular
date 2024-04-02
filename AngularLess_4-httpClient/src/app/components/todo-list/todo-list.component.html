@@ -1,0 +1,10 @@
+<div class="wrapper">
+  @if (todos$ | async; as todos) {
+    @for(todo of todos; track todo.id) {
+      <div>
+        <h2>{{ todo.title }}</h2>
+        <p>{{ todo.completed }}</p>
+      </div>
+    }
+  }
+</div>
